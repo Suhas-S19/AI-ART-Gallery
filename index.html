@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Generator</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body id="body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <img src="logo.png" alt="logo" style="margin-left: 140px; margin-top: -4px;" width="35px" height="35px">
+            <a class="navbar-brand" href="#body">AIArtGallery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link i2" href="#About Us">About Us <i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link i3" href="#gallery">AI-Gallery <i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <br><br>
+
+    <div class="jumbotron bg-transparent" id="home">
+        <h1 class="display-4" style="color: black; font-size: 45px;" id="one">AI Image Generator: <br>Turn text to
+            images</h1>
+        <p class="lead"></p>
+        <div class="container" style="color: black;">
+            <p class="lead" style="font-size: 30px; color:black;">
+                Convert words into an image in mere seconds with our <br> AI Image Generator. Type a detailed
+                description and watch <br> your vision transform into vibrant, piece of art.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img1.jpeg" class="rounded img-fluid" style="border-radius: 0%;" alt="image" id="img1">
+                </div>
+                <div class="col-md-6">
+                    <img src="img2.jpeg" class="rounded img-fluid" id="img2" style="border-radius: 0%; height:100%" alt="image" id="img2">
+                </div>
+            </div>
+        </div>
+        <br> <br> <br> <br><br>
+        <h2 class="gal" id="gallery"> AI-Image Gallery</h2> <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="input-container">
+                        <input class="form-control" placeholder="Ex. picture of a blue cat in the rain" style="color: aliceblue;">
+                        <div id="submit-icon" class="mt-2 btn btn-primary btn-block">Generate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="image-container"> 
+            <div class="loading-overlay" id="loadingOverlay">
+                <div class="spinner"></div>
+              </div>
+        </section> <br> <br>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 about-section">
+                <h2 style="text-align: center;" id="About Us">About Us-<small style="font-weight: 10; font-size:20px;"><br>(A small
+                        introduction about our team)</small></h2>
+                <p class="gc1">
+                    <strong>Name:</strong> Suhas S<br>
+                    <strong>USN:</strong> 4AD21CD048<br>
+                    <strong>College:</strong> ATME College of Engineering<br>
+                    <strong>Skills:</strong>
+                </p>
+                <p class="gc2">
+                    <strong>Name:</strong> Deepika Aryan M.B<br>
+                    <strong>USN:</strong> 4AD21CD013<br>
+                    <strong>College:</strong> ATME College of Engineering<br>
+                    <strong>Skills:</strong>
+                </p>
+                <p class="gc3">
+                    <strong>Name:</strong> Dhananjaya H.E<br>
+                    <strong>USN:</strong> 4AD21CD044<br>
+                    <strong>College:</strong> ATME College of Engineering<br>
+                    <strong>Skills:</strong>
+                </p>
+                <p class="gc4">
+                    <strong>Name:</strong> Chandana M<br>
+                    <strong>USN:</strong> 4AD21CD009<br>
+                    <strong>College:</strong> ATME College of Engineering<br>
+                    <strong>Skills:</strong>
+                </p>
+                <p class="gc5">
+                    <strong>Name:</strong> Sheryas A<br>
+                    <strong>USN:</strong> 4AD21CD045<br>
+                    <strong>College:</strong> ATME College of Engineering<br>
+                    <strong>Skills:</strong>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">AI-Image-Gallery.</h5>
+                    <p class="small text-muted" id="small">Generate the images of your choice with our AI integrated website.</p>
+                    <p class="small text-muted mb-0" id="small">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#"></a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Get started</a></li>
+        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted"> Subscribe to our email :) </p>
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" style="color: aliceblue;">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

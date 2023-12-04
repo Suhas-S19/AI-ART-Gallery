@@ -1,0 +1,201 @@
+:root {
+    --green: #a2ccb6;
+    --light-peach: #ffecd9;
+    --peach: #ee786e;
+    --sand: #fceeb5;
+    --white: #fff;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+    background-image: url('bg1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    margin-left: 3%;
+    font-weight: bolder;
+
+}
+.display-4{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.img-thumbnail{
+    text-align: center;
+    letter-spacing: 35;
+}
+.lead{
+    text-align: center;
+    font-family:'Josefin Sans',sans-serif;
+}
+.buttom-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+.input-container{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+input{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 't';
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+}
+#submit-icon{
+   -webkit-appearance: none;
+   background: -webkit-gradient(
+    to right,
+    var(--green) 0%,
+    var(--sand) 50%,
+    var(--peach)100%
+   );
+   background: linear-gradient(
+    to right,
+    var(--green) 0%,
+    var(--sand) 50%,
+    var(--peach) 100%
+   );
+    background-size: 500%;
+    border: none;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: var(--white);
+    cursor: pointer;
+    font: 0.8em 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 2rem;
+  letter-spacing: 0.05em;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 5rem;
+}
+
+#submit-icon:hover{
+        animation-name: gradient;
+        -webkit-animation-name: gradient;
+        animation-duration: 2s;
+        -webkit-animation-duration: 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+      }
+      
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+.gal
+{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.gc1, .gc2, .gc3, .gc4, .gc5, .gc6{
+    margin-left: 2%;
+    background: rgba(225, 225, 225, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.about-section p{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 20px; /* Adjust the gap between images */
+    margin-top: 25px; /* Add some top margin for spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .loading-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db; /* Set your desired spinner color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 15s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  #about-us{
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+  }
+  #img2{
+    margin-top: 5%;
+    box-shadow: 5px 5px 10px #888888;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  
+  .form-control {
+    background: #212529;
+    border-color: #545454;
+  }
+  
+  .form-control:focus {
+    background: #212529;
+  }
+  
+  footer {
+    background: #212529;
+  }
+
+#img1{
+  box-shadow: 5px 5px 10px #888888;
+}
