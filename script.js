@@ -18,7 +18,7 @@ function hideLoadingOverlay() {
 
 async function generateAndDisplayImage() {
 
-  if (generationCounter >= 2) {
+  if (generationCounter >= 4) {
     var n = prompt('You have reached the maximum limit of generated images.');
     return;
   }
@@ -87,6 +87,7 @@ async function checkStatus(processId) {
         // Loop through the image links and create image elements
         imageLinks.forEach(link => {
           const imageElement = document.createElement('img');
+          imageElement.classList.add('generated-image');
           imageElement.src = link;
           imageContainer.appendChild(imageElement);
         });
